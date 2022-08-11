@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanfranco Currículum vitae</title>
+    <link rel="shortcut icon" href="./Imagenes/impresion.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Currículum Dario Lanfranco Ruffener">
+    <meta name="description"
+        content="Proyecto BÁSICO de desarrollo web, con la utilidad de informar sobre los conocimientos adquiridos a lo largo del tiempo sobre programación.">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dariolanfranco.github.io">
+    <meta property="og:title" content="Proyecto BÁSICO de desarrollo web">
+    <meta property="og:description"
+        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta property="og:image" content="https://dariolanfranco.github.io/Imagenes/impresion.png">
+
+</head>
+
+<body>
+
+    <section class="curri" id="vitae">
+        <img src="./Imagenes/curriculum.jpg" class="curriculum">
+        <img src="./Imagenes/close.svg" class="cerrado" onclick="Volver();">
+    </section>
+
+  <section class="todo" id="entero">
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Currículum.</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+ <!--               <li class="nav__items">
+                    <a href="#" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Contacto</a>
+                </li>-->
+
+                <img src="./Imagenes/close.svg" class="nav__close">
+            </ul> 
+
+          <!--  <div class="nav__menu">
+                <img src="./Imagenes/menu.svg" class="nav__img">
+            </div> -->
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Currículum vitae <br> Dario Lanfranco Ruffener.</h1>
+            <p class="hero__paragraph">Este es un pequeño proyecto que tenia en mente para poner en practica mis conocimientos
+                 en HTML, CSS Y JS. No es mas que un Curriculum en formato web o un basico portfolio.</p>
+            <a href="#" class="cta" onclick="MostrarCV();">Ver más</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Un poco sobre mi</h2>
+            <p class="about__paragraph">En esta seccion se encuentran mis estudios, proyectos y pasatiempos</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./Imagenes/book.svg" class="about__icon">
+                    <h3 class="about__title">Estudios</h3>
+                    <p class="about__paragrah">
+                        tecnico electromecanico.<br> 
+                        Developer full stack junior.<br> 
+                        Estudiante en analista de sistemas</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./Imagenes/git.svg" class="about__icon">
+                    <h3 class="about__title">Proyectos</h3>
+                    <p class="about__paragrah">Aqui esta mi direccion de GitHub 
+                        <a href="https://github.com/DarioLanfranco" target="_blank">https://github.com</a> </p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./Imagenes/pasatiempo.svg" class="about__icon">
+                    <h3 class="about__title">Pasatiempos</h3>
+                    <p class="about__paragrah">
+                        ciclismo.<br> 
+                        ajedrez.<br> 
+                        lectura.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge" id="soft">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Habilidades duras y blandas.</h2>
+                    <p class="knowledge__paragraph">Este articulo habla sobre mis Hard and soft skills, o en español habilidades 
+                        duras y blandas</p>
+                    <a href="#" class="cta" onclick="MostrarProgreso();">Expandir información</a>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./Imagenes/computadoraDos.png" class="knowledge__img">
+                </figure>
+            </div>
+
+        </section>
+
+        <section class="progress" id="barra">
+            <img src="./Imagenes/close.svg" class="cerrado" onclick="CierrePestaña();" id="cierre">
+            <div class="progress__container">
+                <div class="skills">
+                    <h2>HTML : 75%</h2>
+                    <div class="bar">
+                        <div class="barraProgreso" style="--w:75%"></div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h2>CSS : 70%</h2>
+                    <div class="bar">
+                        <div class="barraProgreso" style="--w:70%"></div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h2>JavaScript : 55%</h2>
+                    <div class="bar">
+                        <div class="barraProgreso" style="--w:55%"></div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h2>GitHub : 50%</h2>
+                    <div class="bar">
+                        <div class="barraProgreso" style="--w:50%"></div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h2>Ingles : 70%</h2>
+                    <div class="bar">
+                        <div class="barraProgreso" style="--w:70%"></div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h2>Trabajo en equipo : 100%</h2>
+                    <div class="bar">
+                        <div class="barraProgreso" style="--w:100%"></div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="./Imagenes/leftarrow.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Estudios universitarios</h2>
+                        <p class="testimony__review">Soy estudiante de la universidad Nacional de Rio cuarto, perteneciente a la 
+                            facultad de ciencias exactas, en la carrera analista de sistemas.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./Imagenes/unrc.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Estudios Secundarios</h2>
+                        <p class="testimony__review">Me egrese del instituto tecnico Santa maria teresa goretti, con orientación en 
+                            electromecanica, realize mis 7 años allí.
+                        </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./Imagenes/goretti.png" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Cursos extras</h2>
+                        <p class="testimony__review">En el año 2020 paralelo a mis estudios universitarios, comence cursos relacionados 
+                            a paginas y aplicaciones web, para esto tome estudios de HTML Y CSS. y aprendi lenguajes tales como JAVA y JS.
+                            En la universidad aprendi C, Haskell y de curiosidad aprendi Arduino.
+                        </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./Imagenes/trabajoEquipo.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <img src="./Imagenes/derarrow.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas Relacionadas</h2>
+            <p class="questions__paragraph">Preguntas comunes para saber mas de mi</p>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Documentación
+                            <span class="questions__arrow">
+                                <img src="./Imagenes/arrowabajo.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">DNI: 41019006 <br> cuil: 20-41019006-1</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Ubicacion
+                            <span class="questions__arrow">
+                                <img src="./Imagenes/arrowabajo.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Soy de Rio Cuarto, Cordoba, Argentina. Actualmente resido ahí.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Experiencia Laboral
+                            <span class="questions__arrow">
+                                <img src="./Imagenes/arrowabajo.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">- Relacionado a la programación como tal no tengo experiencia Laboral, pero si ganas
+                             de aprender y enfrentarme a nuevos desafios. <br><br>
+                            - Trabaje en atencion al publico en van-leo, minimercado ubicado en Banda Norte.<br><br>
+                            - Por cuenta propia realice trabajos relacionados a la orientacion de mi Colegio secundario, Electricidad,
+                            soldadura, carpinteria.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curriculum.</h2>
+
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mrgdzrya" method="POST">
+                <h3 class="footer__newsletter">Mandar su mail y me comunicare contigo</h3>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="email">
+                    <input type="submit" value="            Enviar             " class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://wa.me/3584201263" target="_blank" class="footer__icons"><img src="./Imagenes/wsp.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/dary_lanfranco/" target="_blank" class="footer__icons"><img src="./Imagenes/instagram.svg" class="footer__img"></a>
+                <a href="https://github.com/DarioLanfranco" target="_blank" class="footer__icons"><img src="./Imagenes/git.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Dario Lanfranco Ruffener</h3>
+        </section>
+    </footer>
+
+    <script>
+        function MostrarProgreso(){
+            document.getElementById('barra').style.display = 'block';
+            document.getElementById('soft').style.display = 'none';
+        }
+        function CierrePestaña(){
+            document.getElementById('barra').style.display = 'none';
+            document.getElementById('soft').style.display = 'block';
+        }
+        function MostrarCV(){
+            document.getElementById('entero').style.display = 'none';
+            document.getElementById('vitae').style.display = 'block';
+        }
+        function Volver(){
+            document.getElementById('entero').style.display = 'block';
+            document.getElementById('vitae').style.display = 'none';
+        }
+
+    </script>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <!--<script src="./js/menu.js"></script>-->
+   
+</section>
+</body>
+
+</html>
